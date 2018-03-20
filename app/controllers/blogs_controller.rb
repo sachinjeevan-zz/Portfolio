@@ -5,9 +5,7 @@ class BlogsController < ApplicationController
   # GET /blogs.json
   def index
     @blogs = Blog.all
-    @page_title = "My Portfolio Blog"
-   
-    
+    @page_title = "My Portfolio Blog"   
   end
 
   # GET /blogs/1
@@ -30,7 +28,6 @@ class BlogsController < ApplicationController
   # POST /blogs.json
   def create
     @blog = Blog.new(blog_params)
-
     respond_to do |format|
       if @blog.save
         format.html { redirect_to @blog, notice: 'Blog was successfully created.' }
