@@ -27,7 +27,9 @@ def create
 
   end
   def edit
+  
   @portfolio_items=Portfolio.find(params[:id])
+  3.times { @portfolio_items.technologies.build }
   end
 def update
 @portfolio_items=Portfolio.find(params[:id])
