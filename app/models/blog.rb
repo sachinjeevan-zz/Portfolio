@@ -4,4 +4,12 @@ extend FriendlyId
   friendly_id :title, use: :slugged
   validates_presence_of :title, :body
   belongs_to :topic
+  
+  def self.special_blogs
+  all
+  end
+  
+  def self.featured_blogs
+  limit
+  end
 end
