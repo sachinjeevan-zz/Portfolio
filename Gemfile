@@ -43,3 +43,4 @@ group :development do
   gem 'spring'
 end
 gem 'friendly_id', '~> 5.2', '>= 5.2.3'
+gem 'bootstrap', '~> 4.0'
