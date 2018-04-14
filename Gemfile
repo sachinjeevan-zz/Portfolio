@@ -42,5 +42,6 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
 end
+gem 'petergate', '~> 1.8', '>= 1.8.1'
 gem 'friendly_id', '~> 5.2', '>= 5.2.3'
 gem 'bootstrap', '~> 4.0'
